@@ -91,7 +91,6 @@ si se asegura que el container esta corriendo entonces corra el server de backen
 ```
 cd backend
 pnpm start:dev
-
 ```
 ---
 
@@ -105,7 +104,7 @@ pnpm install
 Iniciá el frontend:
 
 ```
-pnpm start
+ng serve
 ```
 
 La aplicación está desplegada.
