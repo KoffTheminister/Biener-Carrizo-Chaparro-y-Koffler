@@ -84,7 +84,9 @@ pnpm install
 
 Para usar la base de datos en nuestro caso implementamos un servidor SQL en docker. Para ello debe descargar docker, ejecutar el comando docker pull percona/percona-server para obtener la imagen del servidor de percona a partir de la cual crearemos nuestro container y la base de datos. 
 Ejecute:
+```
 docker run --name mysql_des_back -v mysql_data:/var/lib/mysql -e MYSQL_ROOT_HOST='%' -e MYSQL_ALLOW_EMPTY_PASSWORD="yes" -e MYSQL_PASSWORD="password" -e MYSQL_USER="user_name" -e MYSQL_DATABASE='libertant' -p 3306:3306 -d percona/percona-server
+```
 mysql_data tiene que ser cambiada por el PATH a una carpeta dentro de la carpeta de sus volmenes personales de docker. Tambien deberia cambiar password y user_name a unos de preferencia. Estos valores deben ser cambiados en el archivo .env para que el server funcione.
 si se asegura que el container esta corriendo entonces corra el server de backend:
 
