@@ -115,5 +115,5 @@ Ingresá a http://localhost:4200/log-in con las credenciales:
 
 ### Documentación de la API
 
-> Todavía está pendiente generar la documentación y colgarla en GitHub Pages
+Para acceder a la documentacion, primero es necesario ejecutar el servidor de backend con pnpm start:dev y luego se usa el path: 'http://localhost:8080/api-docs' en el buscador.
 
